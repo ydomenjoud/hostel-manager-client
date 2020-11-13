@@ -15,7 +15,7 @@ const routes: Routes = [
     ]},
   { path: 'rooms', children: [
       { path: 'create', component: RoomCreateComponent},
-      { path: 'detail', component: RoomDetailComponent},
+      { path: 'detail/:id', component: RoomDetailComponent},
       { path: 'list', component: RoomsListComponent}
     ]}
 ];

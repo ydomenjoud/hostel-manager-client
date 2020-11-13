@@ -1,1 +1,9 @@
-<p>room-create works!</p>
+
+<form>
+  <label>
+    Name
+    <input [formControl]="nameControl">
+  </label>
+
+  <button (click)="createRoom()" [disabled]="nameControl.invalid">Create</button>
+</form>

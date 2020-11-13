@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Room } from '../../room';
+import { RoomsService } from '../rooms.service';
 
 @Component({
   selector: 'app-rooms-list',
@@ -6,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rooms-list.component.sass']
 })
 export class RoomsListComponent implements OnInit {
+  roomsList: Room[];
 
-  constructor() { }
+  constructor(private roomsService: RoomsService) { }
 
   ngOnInit(): void {
+
+   this.roomsService.list().subscribe(
+     roomsList => {
+       this.roomsList = roomsList;
+     }
+   );
+
   }
 
 }

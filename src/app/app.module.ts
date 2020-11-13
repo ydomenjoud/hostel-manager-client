@@ -27,6 +27,7 @@ import { RoomDetailComponent } from './rooms/room-detail/room-detail.component';
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    FormsModule,
     HttpClientModule,
     AppRoutingModule
   ],

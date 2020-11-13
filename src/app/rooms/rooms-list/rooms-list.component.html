@@ -1,1 +1,18 @@
-<p>rooms-list works!</p>
+
+<table>
+  <tbody>
+    <tr *ngFor="let room of roomsList; let even=even" [class.even]="even">
+      <td>
+        {{ room.id }}
+      </td>
+      <td>
+        {{ room.name }}
+      </td>
+      <td>
+        <a [routerLink]="['/rooms','detail', room.id]">
+          Detail
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
