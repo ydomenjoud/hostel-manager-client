@@ -1,6 +1,10 @@
-<router-outlet></router-outlet>
+<header>
+  <nav>
+    <a routerLink="/">Accueil</a>
+    <a routerLink="/user/login">login</a>
+    <a routerLink="/user/logout">logout</a>
+    <a routerLink="/user/register">register</a>
+  </nav>
+</header>
 
-<app-user-credentials
-[titre]="'login'"
-[submitLabel]="'login'"
-></app-user-credentials>
+<router-outlet></router-outlet>
