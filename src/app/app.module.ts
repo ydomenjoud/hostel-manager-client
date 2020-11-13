@@ -9,6 +9,9 @@ import { UserCredentialsComponent } from './user-credentials/user-credentials.co
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
+import { RoomCreateComponent } from './rooms/room-create/room-create.component';
+import { RoomsListComponent } from './rooms/rooms-list/rooms-list.component';
+import { RoomDetailComponent } from './rooms/room-detail/room-detail.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { LogoutComponent } from './logout/logout.component';
     UserCredentialsComponent,
     RegisterComponent,
     LoginComponent,
-    LogoutComponent
+    LogoutComponent,
+    RoomCreateComponent,
+    RoomsListComponent,
+    RoomDetailComponent
   ],
   imports: [
     BrowserModule,
