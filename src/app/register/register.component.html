@@ -1,5 +1,15 @@
 
+<div *ngIf="success">
+  Votre inscription a bien été prise en compte
+</div>
+
+<div *ngIf="error">
+  Erreur dans l'inscription: {{ error.error.error.message | json }}
+</div>
+
 <app-user-credentials
+  *ngIf="!success || error"
   titre="register"
   submitLabel="register"
+  (credentialsChange)="register($event)"
 ></app-user-credentials>

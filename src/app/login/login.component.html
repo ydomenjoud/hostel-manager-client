@@ -1,5 +1,10 @@
 
+<div *ngIf="error">
+  {{ error.error.error.message  }}
+</div>
+
 <app-user-credentials
   titre="login"
   submitLabel="login"
+  (credentialsChange)="login($event)"
 ></app-user-credentials>
