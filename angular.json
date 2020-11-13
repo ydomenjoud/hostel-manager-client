@@ -7,7 +7,8 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "sass"
+          "style": "sass",
+          "skipTests": true
         }
       },
       "root": "",
@@ -123,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "hostel-manager-client"
+    }
+  },
+  "defaultProject": "hostel-manager-client",
+  "cli": {
+    "analytics": "bf18b19f-493d-4721-8295-7248ac864562"
+  }
 }
